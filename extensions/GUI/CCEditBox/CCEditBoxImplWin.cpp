@@ -27,7 +27,7 @@
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 
 #include "CCEditBox.h"
-#include "proj.win32/Win32InputBox.h"
+#include "projwin32/Win32InputBox.h"
 
 NS_CC_EXT_BEGIN
 
