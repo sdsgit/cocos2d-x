@@ -47,6 +47,14 @@ extern void CC_DLL cc_assert_script_compatible(bool cond, const char *msg);
 #endif
 #endif  // CCAssert
 
+#ifndef CCVerify
+#if COCOS2D_DEBUG > 0
+#define CCVerify(cond, msg) CCAssert(cond, msg)
+#else
+#define CCVerify(cond, msg) cond
+#endif
+#endif // CCVerify
+
 #include "ccConfig.h"
 
 /** @def CC_SWAP
