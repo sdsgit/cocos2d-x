@@ -640,6 +640,7 @@ public:
      * @param cleanup   true if all actions and callbacks on this node should be removed, false otherwise.
      */
     virtual void removeFromParentAndCleanup(bool cleanup);
+	virtual void removeFromParentAndCleanup();
     /** 
      * Removes a child from the container with a cleanup
      *
