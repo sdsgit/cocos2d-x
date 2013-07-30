@@ -626,14 +626,6 @@ void CCNode::removeFromParentAndCleanup(bool cleanup)
     } 
 }
 
-void CCNode::removeFromParentAndCleanup()
-{
-	if (m_pParent != NULL)
-	{
-		m_pParent->removeChild(this,true);
-	} 
-}
-
 void CCNode::removeChild(CCNode* child)
 {
     this->removeChild(child, true);
