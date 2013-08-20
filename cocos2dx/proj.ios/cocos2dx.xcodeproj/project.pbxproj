@@ -1723,6 +1723,7 @@
 					USE_FILE32API,
 					CC_TARGET_OS_IPHONE,
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/..\"",
 					"\"$(SRCROOT)/../kazmath/include\"",
