@@ -805,6 +805,11 @@ void CCScale9Sprite::setColor(const ccColor3B& color)
     }
 }
 
+const ccColor3B& CCScale9Sprite::getColor()
+{
+	return _color;
+}
+
 void CCScale9Sprite::setOpacity(GLubyte opacity)
 {
     _opacity = opacity;
@@ -822,6 +827,11 @@ void CCScale9Sprite::setOpacity(GLubyte opacity)
             }
         }
     }
+}
+
+GLubyte CCScale9Sprite::getOpacity()
+{
+	return _opacity;
 }
 
 NS_CC_EXT_END
